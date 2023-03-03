@@ -63,13 +63,10 @@
             <div class="form-section">
                 <fieldset>
                     <legend><h2>2. Nombre de personnes </h2></legend>
-                    <h2>2. Nombre de personnes </h2>
                     <label>Adultes (maximum 4):</label>
-                    <input id="adultes" name="adultes" required="required">
-
+                    <input type="number" id="adultes" name="adultes" min="1" max="4" required="required">
                     <label>Enfants (maximum 5):</label>
-                    <input id="enfants" name="enfants" required="required">
-
+                    <input type="number" id="enfants" name="enfants" min="0" max="5" required="required">
                     <p>
                         Notes: <br>
                         1. la chambre familiale peut loger jusqu'à 6 personnes<br>
@@ -114,16 +111,17 @@
                     <legend><h2>4. Identification</h2></legend>
                    
                     <label>Prénom :</label>
-                    <input id="prenom" name="prenom" minlength="3" maxlength="12" size="13" required="required">
+                    <input id="prenom" name="prenom" minlength="3" maxlength="15" size="15" required="required">
 
                     <label>Nom :</label>
                     <input id="nom" name="nom" required="required">
 
                     <label>Email :</label>
-                    <input id="email" name="email" size="20" required="required">
+                    <input id="email" name="email" pattern=".+@gmail\.com" placeholder="@gmail.com" size="30" required="required">
 
                     <label>Téléphone :</label>
-                    <input id="telephone" name="telephone" minlength="9" maxlength="11" size="12" required="required">
+                    <input id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="14" required="required">
+                    <small>Format: 418-123-4567</small>
                 </fieldset>
             </div>
 
