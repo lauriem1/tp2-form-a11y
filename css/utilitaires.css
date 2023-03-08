@@ -67,3 +67,12 @@ abbr[title]:hover{
     position: static;
     width: auto;
 }
+
+
+.liste {
+    list-style: none;
+}
+
+.icone {
+    width: 50px;
+}
