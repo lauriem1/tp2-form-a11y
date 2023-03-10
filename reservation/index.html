@@ -30,11 +30,88 @@
                         <h2>1. Vérifier la disponibilité</h2>
                     </legend>
 
-                    <label for="date-arrivee">Date d'arrivée :</label>
-                    <input type="date" id="date-arrivee" name="date-arrivee" required="required">
-                    <!-- <select id="jour-arrivee" name="">
-                    <option label="choisir jour"></option>
-                    option value="1">1</option>
+                    <div class="choix-arrivee">
+                        <label for="date-arrivee">Date d'arrivée :</label>
+                        <select id="mois-arrivee" name="mois" required="required">
+                            <option label="choisir mois"></option>
+                            <option value="1">Janvier</option>
+                            <option value="2">Février</option>
+                            <option value="3">Mars</option>
+                            <option value="4">Avril</option>
+                            <option value="5">Mai</option>
+                            <option value="6">Juin</option>
+                            <option value="7">Juillet</option>
+                            <option value="8">Août</option>
+                            <option value="9">Septembre</option>
+                            <option value="10">Octobre</option>
+                            <option value="11">Novembre</option>
+                            <option value="12">Décembre</option>
+                        </select>
+
+                        <select id="jour-arrivee" name="jour" required="required">
+                            <option label="choisir jour"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+
+                        <select id="annee-arrivee" name="annee-arrivee" required="required">
+                            <option label="choisir année"></option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </select>
+                    </div>
+
+
+                    <div class="choix-depart">
+                    <label for="date-depart">Date de départ :</label>
+                    <select id="mois-depart" name="mois" required="required">
+                        <option label="choisir mois"></option>
+                        <option value="1">Janvier</option>
+                        <option value="2">Février</option>
+                        <option value="3">Mars</option>
+                        <option value="4">Avril</option>
+                        <option value="5">Mai</option>
+                        <option value="6">Juin</option>
+                        <option value="7">Juillet</option>
+                        <option value="8">Août</option>
+                        <option value="9">Septembre</option>
+                        <option value="10">Octobre</option>
+                        <option value="11">Novembre</option>
+                        <option value="12">Décembre</option>
+                    </select>
+
+                    <select id="jour-depart" name="jour" required="required">
+                        <option label="choisir jour"></option>
+                        <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -54,12 +131,25 @@
                         <option value="18">18</option>
                         <option value="19">19</option>
                         <option value="20">20</option>
-                        <option value="21">21</option> 
-                    </select> -->
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
 
-
-                    <label for="date-depart">Date de départ :</label>
-                    <input type="date" id="date-depart" name="date-depart" required="required">
+                    <select id="annee-arrivee" name="annee-arrivee" required>
+                        <option label=" choisir année"></option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </div>
 
                     <button type="button" id="check-availability-button">Vérifier la disponibilité</button>
                     <p id="availability-message"></p>
@@ -113,7 +203,7 @@
                     <p> Le coût du petit déjeûner des adultes est de 25$ CAN, pour les enfants de moins de 12 ans c'est
                         12.50$
                         CAN.</p>
-                    
+
                 </fieldset>
             </div>
 
@@ -130,8 +220,7 @@
                     <input id="nom" name="nom" size="20" required="required">
 
                     <label>Email :</label>
-                    <input id="email" name="email" pattern=".+@gmail\.com" size="30"
-                        required="required">
+                    <input id="email" name="email" pattern=".+@gmail\.com" size="30" required="required">
 
                     <label>Téléphone :</label>
                     <input id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="14"
@@ -159,14 +248,16 @@
     <footer>
         <ul class="liste">
             <li>
-                <a href="https://www.instagram.com/"><img class="icone" src="/images/icones/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.instagram.com/"><img class="icone" src="/images/icones/instagram.svg"
+                        alt="Instagram"></a>
             </li>
             <li>
-                <a href="https://fr-ca.facebook.com/"><img class="icone" src="/images/icones/facebook-f.svg" alt="Facebook"></a>
+                <a href="https://fr-ca.facebook.com/"><img class="icone" src="/images/icones/facebook-f.svg"
+                        alt="Facebook"></a>
             </li>
         </ul>
         <button type="button"><img src="/images/icones/share.svg" alt="Partager">Share</button>
-    
+
         <p>
             Ce site Web est un projet pédagogique réalisé par
             <a href="">Prénom et Nom</a> et <a href="">Prénom et Nom</a> dans le cadre du cours 582-204-SF Intégration

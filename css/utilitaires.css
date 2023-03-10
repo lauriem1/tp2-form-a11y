@@ -71,8 +71,12 @@ abbr[title]:hover{
 
 .liste {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .icone {
     width: 50px;
+    margin-bottom: 10px;
 }
