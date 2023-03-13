@@ -9,8 +9,8 @@ Un formulaire de réservation pour l'Auberge du Jacana Africain
 
 
 Ce qui a bien été : Rendre le formulaire accessible et inclure les contraintes et pattern de formulaire. Aussi, styler la page réservation, les effets sur les liens + organiser la feuille de style.
-Ce qui est incomplet : 
-Estimation d'heures sur le projet : 7 heures
+Ce qui est incomplet : Moins d'effets appliqués sur le titre principal.
+Estimation d'heures sur le projet : 6 heures
 
 
 | Items réalisés dans le travail| Pts | Habiletés |
