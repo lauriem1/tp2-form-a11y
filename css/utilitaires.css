@@ -1,13 +1,17 @@
 /* Variables et utilitaires
    ========================================================================== */
-
 /****** Variables (peuvent être utilisées dans tous les fichiers) *******/
 :root {
-    --couleur-texte: #022b50;
-    --couleur-titres-h1-h3: darkmagenta;
-    --couleur-dominante: darkmagenta;
-    --couleur-secondaire: #418cff;
+    --couleur-texte: #5a5a5a;
+    --couleur-titres-h1-h3: rgb(186, 186, 186);
+    --couleur-dominante: antiquewhite;
+    --couleur-secondaire: rgb(254, 151, 100);
     --bg-couleur-contraste:#efefef;
+    --couleur-bouton: rgb(244, 185, 161);
+    --couleur-bouton-hover: rgb(219, 148, 130);
+    --police: 'Questrial', sans-serif;
+    --police-titre: 'Lexend Deca', sans-serif;
+    --police-sous-titre: 'Lexend Deca', sans-serif;
     --box-shadow:5px 5px 5px;
 }
 
@@ -66,17 +70,4 @@ abbr[title]:hover{
     overflow: visible;
     position: static;
     width: auto;
-}
-
-
-.liste {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.icone {
-    width: 50px;
-    margin-bottom: 10px;
 }

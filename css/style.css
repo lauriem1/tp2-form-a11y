@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/* Importations des feuilles de style */
+@import url(/css/normalize.css);
+@import url(/css/typo.css);
+@import url(/css/utilitaires.css);
+
+
+/* Boutons */
+button {
+    background-color: var(--couleur-bouton);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--couleur-bouton-hover);
+    box-shadow: var(--bouton-box-shadow);
+}
+/* Haut de page, bas de page */
+header,
+footer {
+    background-color: rgb(255, 188, 154);
+    padding: 2rem 2rem;
+    
+}
+/* Couleurs du contenu principal */
+main {
+    background-color:antiquewhite;
+    padding: 0.5em;
+}
+aside {
+    background-color: rgb(255, 210, 190);
+    padding: 0.2em;
+
+}
+
+/* Titre Auberge */
+ .titre {
+    font-family: var(--police-titre);
+    font-size: 5vw;
+    color:rgb(78, 78, 78);
+ }
+
+/* Styler la navigation */
+.menu__lien:link,
+.menu__lien:visited {
+    font-size: 1.2em;
+    color: rgb(101, 101, 101);
+    text-decoration: none;
+}
+.menu__lien:hover,
+.menu__lien:active {
+    font-size: 1.2em;
+    color:black;
+}
+/* Mise en forme du formulaire de réservation */
+
+/* Fieldset, Legend */
+.form-section {
+    margin-bottom: 2rem;
+}
+
+fieldset fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+fieldset {
+    border: 2px double rgb(78, 78, 78);
+}
+
+legend {
+    padding: 0 0.5rem;
+}
+
+fieldset fieldset legend {
+    padding: 0.5rem;
+}
+
+fieldset h2 {
+    margin: 0;
+}
+
+
+
+/* Section Dates de disponibilités */
+select {
+    border-radius: 5px;
+    margin: 0 0.25rem;
+}
+
+.choix-dates__arrivee {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.8em;
+}
+
+.choix-dates__depart{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.8em;
+}
+
+@media (min-width: 600px) {
+    .choix-dates__arrivee {
+        flex-direction: row;
+    }
+}
+@media (min-width: 600px) {
+    .choix-dates__depart {
+        flex-direction: row;
+    }
+}
+
+/* Section Choix de chambres */
+.choix_chambre .liste_chambres {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .choix_chambre .liste_chambres {
+        display: flex;
+    }
+}
+.li_chambre {
+    flex-basis: 33%;
+    margin: 0.25rem;
+}
+
+.li_chambre img {
+    filter: grayscale();
+}
+
+.li_chambre [type="radio"]+label {
+    display: block;
+    padding: 1rem;
+}
+
+.li_chambre [type="radio"]:focus+label,
+.li_chambre [type="radio"]:checked+label {
+    background-color: var(--couleur-form);
+    font-weight: bold;
+}
+
+.li_chambre [type="radio"]:focus+label img,
+.li_chambre [type="radio"]:checked+label img,
+.li_chambre [type="radio"]:hover+label img {
+    filter: none;
+}
+
+
+
+/* Effets focus, hover de lien */
+
+.icone_reseaux.icone_reseaux,
+.icone_reseaux:active {
+    color: bisque;
+
+}
+
+:focus {
+    outline: none;
+    box-shadow: 2px 2px 3px 1px rgb(250, 160, 135);
+}
+
+button:focus {
+    box-shadow: var(--bouton-box-shadow);
+}
+
+/* Mise en forme des réseaux sociaux */
+
+.liste {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone_reseaux {
+    width: 47px;
+    margin-bottom: 10px;
+}
+
+
+.icone_reseaux img,
+.reseaux-sociaux_lien:link,
+.reseaux-sociaux_lien:visited {
+    border-bottom: 3px solid rgb(254, 151, 100);
+
+}
+
+.icone_reseaux img,
+.reseaux-sociaux_lien:hover,
+.reseaux-sociaux_lien:active {
+    border-bottom: 3px dashed antiquewhite;
+
+}
+
+/* Icone message d'erreur */
+
+.icone {
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    background-image: url("/images/icones/good-warning-error.png");
+    background-size: cover;
+    position: relative;
+    top: 5px;
+}
+
+.icone--ok {
+    background-position: 0 0;
+}
+
+.icone--avertissement {
+    background-position: 49px 0;
+}
+
+.icone--erreur {
+    background-position: 101px 0;
+}

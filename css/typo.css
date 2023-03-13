@@ -32,6 +32,8 @@
  * assurer la meilleure compatibilité.
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Questrial&display=swap');
+
 h1,
 .h1,
 h2,
@@ -40,12 +42,13 @@ h3,
 .h3,
 h4,
 .h4 {
-    font-family: 'News Cycle', sans-serif;
+    font-family: var(--police-titre);
     font-weight: 700;
+    color: var(--couleur-texte);
 }
 
 body {
-    font-family: 'News Cycle', sans-serif;
+    font-family: var(--police);
 }
 
 
